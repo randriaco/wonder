@@ -1,0 +1,7 @@
+framework:
+  rate_limiter:
+    password_recovery:
+      # limite de 4 requetes par heure et par IP
+      policy: fixed_window
+      limit: 4
+      interval: '60 minutes'
